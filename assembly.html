@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enciclopédia das Linguagens - Linguagem Dart</title>
+    <title>Enciclopédia das Linguagens - Linguagem assembly</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,81 +12,49 @@
         <div class="detail-card">
             <div class="logo">
                 <img class="imagem-logo"
-                    src="https://i.pinimg.com/736x/25/a8/5d/25a85d9e5057430d82273a3c75e73014.jpg
-                    "
+                    src="data:image/jpeg;base64,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"
                     alt="">
             </div>
         </div>
 
-    <h1>Linguagem Dart</h1>
+    <h1>Linguagem Assembly</h1>
     <br><br>
 
-    <h2>Pesquisador do conteúdo: Freedson Brusaca</h2>
+    <h2>Pesquisador do conteúdo: Jackson Rodrigues</h2>
     <br><br>
 
-    <h3>Breve Histórico</h3>
+    <h3>📜 Breve Histórico</h3>
     <ul>
-        <li>Com os primeiros computadores eletrônicos (como o ENIAC), a programação era feita diretamente em código binário (linguagem de máquina).</li>
-        <li>A popularidade da linguagem decola com o lançamento do Flutter, um framework do Google para a criação de
-            aplicativos multiplataforma (móveis, web e desktop).</li>
-        <li>Atualmente: O Dart se consolida como uma linguagem versátil e poderosa, impulsionada pelo sucesso do
-            Flutter, sendo usada para construir interfaces de usuário rápidas e eficientes em várias plataformas.</li>
+        <li>Surgiu na década de 1940–1950, como uma forma mais “legível” de escrever códigos que antes eram feitos em linguagem de máquina (números binários).</li> 
+        <li>Foi criada para facilitar o trabalho dos programadores que precisavam lidar com instruções específicas do processador.</li>
+        <li>Cada tipo de processador (Intel, AMD, ARM etc.) possui seu próprio dialeto de Assembly.</li>
     </ul>
     <br><br>
 
-    <h3>Vantagens</h3>
+    <h3>✅ Vantagens</h3>
     <ol>
-        <li>O código Assembly é muito rápido porque é diretamente traduzido para linguagem de máquina, sem camadas intermediárias.</li>
-        <li>Produtividade e velocidade de desenvolvimento: O Dart acelera o ciclo de desenvolvimento com o recurso Hot
-            Reload (Recarga Instantânea). Com ele, os desenvolvedores podem ver as alterações no código em tempo real,
-            sem precisar reiniciar o aplicativo. Isso permite iterações rápidas e um fluxo de trabalho mais eficiente.
-        </li>
-        <li>Alto desempenho: Graças às suas capacidades de compilação JIT (Just-In-Time) e AOT (Ahead-Of-Time), os
-            aplicativos construídos com Dart apresentam um desempenho rápido e suave, semelhante ao de aplicativos
-            nativos.</li>
-        <li>Sintaxe fácil de aprender: A sintaxe do Dart é simples e clara, facilitando o aprendizado, especialmente
-            para desenvolvedores que já conhecem linguagens como Java e JavaScript. A tipagem estática opcional também
-            ajuda a evitar erros e a melhorar a manutenibilidade do código.</li>
+        <li>1. Alta performance: o código é extremamente rápido, pois se comunica diretamente com o hardware.</li>
+        <li>2. Maior controle: permite acesso total aos registradores e à memória da máquina.</li>
+        <li>3. Eficiência: programas podem ser muito pequenos e otimizados.</li>
+        <li>4. Essencial para sistemas embarcados e drivers: é usada em softwares que exigem velocidade e controle máximo.</li>
     </ol>
     <br><br>
 
-    <h3>Desvantagens</h3>
+    <h3>❌ Desvantagens</h3>
     <ol>
-        <li>Foco principal em uma única tecnologia: Embora seja uma linguagem de propósito geral, o Dart é fortemente
-            vinculado ao framework Flutter. Fora do ecossistema Flutter, seu uso e relevância diminuem
-            consideravelmente. Isso o torna menos versátil para outros tipos de projetos do que linguagens como
-            JavaScript ou Python.</li>
-        <li>Tamanho da comunidade e ecossistema: A comunidade do Dart, embora crescente, ainda é menor do que a de
-            linguagens mais estabelecidas. Isso se reflete em uma quantidade menor de bibliotecas, ferramentas e
-            recursos disponíveis, o que pode dificultar a resolução de problemas complexos ou o encontro de soluções
-            prontas.</li>
-        <li>Mercado de trabalho mais limitado: Como a linguagem está intrinsecamente ligada ao Flutter, as oportunidades
-            de emprego para desenvolvedores Dart tendem a ser concentradas em posições de desenvolvimento mobile
-            multiplataforma. Oportunidades para outras áreas (como back-end puro ou web sem Flutter) são
-            significativamente menos comuns.</li>
-        <li>Associação com a Google: Embora a Google seja uma empresa poderosa, a associação do Dart com a gigante da
-            tecnologia levanta preocupações sobre a longevidade e o futuro da linguagem, especialmente considerando o
-            histórico da Google de descontinuar produtos. Essa dependência de uma única empresa pode ser vista como um
-            risco por alguns desenvolvedores e empresas.</li>
+        <li>1. Complexidade alta: o código é difícil de entender e escrever.</li>
+        <li>2. Pouca portabilidade: um programa em Assembly para um processador não funciona em outro.</li>
+        <li>3. Demora no desenvolvimento: escrever e testar programas em Assembly leva mais tempo.</li>
+        <li>4. Manutenção difícil: é complicado atualizar ou corrigir erros em códigos grandes.</li>
     </ol>
     <br><br>
 
-    <h3>Aplicações</h3>
+    <h3>⚙️ Aplicações</h3>
     <ul>
-        <li>Desenvolvimento de aplicativos móveis (Android e iOS): Esta é a aplicação mais popular, impulsionada pelo
-            Flutter. Permite criar aplicativos com interfaces de usuário ricas e de alto desempenho, usando uma única
-            base de código para ambas as plataformas.</li>
-        <li>Desenvolvimento de aplicativos web: O Dart pode ser compilado para JavaScript, o que permite o
-            desenvolvimento de aplicações web que rodam em qualquer navegador. Isso pode ser feito diretamente com a
-            plataforma web do Dart ou usando o Flutter para web.</li>
-        <li>Desenvolvimento de aplicativos desktop: O Dart, com o suporte do Flutter, também é utilizado para criar
-            aplicativos desktop para Windows, macOS e Linux. Isso estende a capacidade multiplataforma para além dos
-            dispositivos móveis e da web.</li>
-        <li>Desenvolvimento backend: Embora menos comum, o Dart pode ser usado para criar aplicações backend e de linha
-            de comando. Existe uma comunidade que explora seu uso para o desenvolvimento de servidores, APIs e scripts.
-        </li>
-        <li>Sistemas embarcados: A capacidade do Dart de compilar para código nativo e seu desempenho tornam-no uma
-            opção para o desenvolvimento de sistemas embarcados, como aplicações para dispositivos específicos.</li>
+        <li>Sistemas embarcados (como microcontroladores, robótica, IoT).</li>
+        <li>Desenvolvimento de sistemas operacionais e drivers de hardware.</li>
+        <li>Programas que exigem desempenho máximo, como jogos antigos ou partes críticas de softwares modernos.</li>
+        <li>Engenharia reversa e segurança digital (análise de vírus, exploits). </li>
     </ul>
     <br><br>
     <div class="container">
